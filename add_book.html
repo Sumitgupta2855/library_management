@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Book</h1>
+    </header>
+    <main>
+        <form action="php/add_book.php" method="POST">
+            <input type="text" name="title" placeholder="Book Title" required>
+            <input type="text" name="author" placeholder="Author" required>
+            <input type="text" name="genre" placeholder="Genre (e.g., Fiction, Non-fiction)" required>
+            <input type="number" name="year" placeholder="Year of Publication" required>
+            <button type="submit">Add Book</button>
+        </form>
+    </main>
+</body>
+</html>
